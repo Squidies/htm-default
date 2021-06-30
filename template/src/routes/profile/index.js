@@ -1,4 +1,5 @@
 import { h } from 'preact';
+import { html } from 'htm/preact';
 import {useEffect, useState} from "preact/hooks";
 import style from './style.css';
 
@@ -12,20 +13,20 @@ const Profile = ({ user }) => {
 		return () => clearInterval(timer);
 	}, []);
 
-	return (
-		<div class={style.profile}>
-			<h1>Profile: {user}</h1>
-			<p>This is the user profile for a user named { user }.</p>
+	return html`
+		<div class=${style.profile}>
+			<h1>Profile: ${user}</h1>
+			<p>This is the user profile for a user named ${ user }.</p>
 
-			<div>Current time: {new Date(time).toLocaleString()}</div>
+			<div>Current time: ${new Date(time).toLocaleString()}</div>
 
 			<p>
-				<button onClick={() => setCount((count) => count + 1)}>Click Me</button>
-				{' '}
-				Clicked {count} times.
+				<button onClick=${()=> setCount((count) => count + 1)}>Click Me</button>
+				${' '}
+				Clicked ${count} times.
 			</p>
 		</div>
-	);
+	`;
 }
 
 export default Profile;
