@@ -1,16 +1,16 @@
-# preact-default-boilerplate
+# preact-htm-default-boilerplate
 
 ![Lighthouse-Badge](https://img.shields.io/badge/lighthouse-100%2F100-brightgreen.svg)
 
 ## Documentation
-- This is the default template for [preact-cli](https://github.com/developit/preact-cli).
+- This is [preact-cli](https://github.com/developit/preact-cli) template using [htm](https://github.com/developit/htm), forked from the default template.
 - [For Preact](https://preactjs.com/): General information about how to work with Preact, not specific to this template
 
 ## Usage
 
 ``` bash
-$ npx preact-cli create default my-project
-$ cd my-project
+$ npx preact-cli create Squidies/htm-default <my-project>
+$ cd <my-project>
 $ npm install
 $ npm run dev
 ```
@@ -31,13 +31,14 @@ Development server runs on port `8080`. If the default port is already in use on
 
 ### How to Test
 
-The `default` template provides a basic test setup with Jest, Enzyme, and [`enzyme-adapter-preact-pure`](https://github.com/preactjs/enzyme-adapter-preact-pure). You are free to change Enzyme with any other testing library (eg. [Preact Testing Library](https://testing-library.com/docs/preact-testing-library/intro)).
+The `htm-default` template provides a basic test setup with Jest, Enzyme, and [`enzyme-adapter-preact-pure`](https://github.com/preactjs/enzyme-adapter-preact-pure). You are free to change Enzyme with any other testing library (eg. [Preact Testing Library](https://testing-library.com/docs/preact-testing-library/intro)).
 
 You can run all additional Jest CLI commands with the `npm run test` command as described in the [Jest docs](https://facebook.github.io/jest/docs/en/cli.html#using-with-npm-scripts). For example, running jest in watch mode would be :
 
 - `npm run test -- --watch` instead of  `jest --watch `
 
 ### Fork It And Make Your Own
+Forked from [preactjs-templates/default](https://github.com/preactjs-templates/default).
 
 You can fork this repo to create your own boilerplate, and use it with `preact-cli`:
 
